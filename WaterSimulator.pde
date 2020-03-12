@@ -1,6 +1,6 @@
 void setup()
 {
-  size(500,500);
+  size(G.window_sx,G.window_sy);
 }
 
 void draw()
