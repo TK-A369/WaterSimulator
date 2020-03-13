@@ -4,4 +4,6 @@ abstract class WaterElement
   {
     
   }
+  
+  public abstract void Tick();
 }
