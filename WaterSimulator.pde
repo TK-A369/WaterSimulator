@@ -14,6 +14,6 @@ void draw()
 {
   for(int i = 0 ; i < G.elements.size() ; i ++)
   {
-    G.elements.get(i).Draw();
+    G.elements.get(i).Tick();
   }
 }
