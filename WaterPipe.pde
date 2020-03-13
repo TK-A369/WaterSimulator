@@ -38,6 +38,7 @@ class WaterPipe extends WaterElement
   
   public void Draw()
   {
-    
+    stroke(255);
+    line(((WaterContainer)(G.elements.get(c1))).x, ((WaterContainer)(G.elements.get(c1))).y, ((WaterContainer)(G.elements.get(c2))).x, ((WaterContainer)(G.elements.get(c2))).y);
   }
 }
