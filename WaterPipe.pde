@@ -12,4 +12,14 @@ class WaterPipe extends WaterElement
     this.maxtransfer = maxtransfer;
     this.dir = dir;
   }
+  
+  public void Tick()
+  {
+    Draw();
+  }
+  
+  public void Draw()
+  {
+    
+  }
 }
