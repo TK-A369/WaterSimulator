@@ -10,5 +10,8 @@ void setup()
 
 void draw()
 {
-  
+  for(int i = 0 ; i < G.elements.length() ; i ++)
+  {
+    G.elements.get(i).Draw();
+  }
 }
