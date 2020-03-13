@@ -12,6 +12,7 @@ void setup()
 
 void draw()
 {
+  background(0);
   for(int i = 0 ; i < G.elements.size() ; i ++)
   {
     G.elements.get(i).Tick();
