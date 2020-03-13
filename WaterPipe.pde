@@ -15,6 +15,7 @@ class WaterPipe extends WaterElement
   
   public void Tick()
   {
+    println("Tick!");
     Draw();
     int f1 = ((WaterContainer)(G.elements.get(c1))).fill;
     int f2 = ((WaterContainer)(G.elements.get(c2))).fill;
@@ -26,12 +27,12 @@ class WaterPipe extends WaterElement
     switch(adir)
     {
       case 1:
-        f1 -= transfer_size;
-        f2 += transfer_size;
+        ((WaterContainer)(G.elements.get(c1))).fill -= transfer_size;
+        ((WaterContainer)(G.elements.get(c2))).fill += transfer_size;
         break;
       case -1:
-        f1 += transfer_size;
-        f2 -= transfer_size;
+        ((WaterContainer)(G.elements.get(c1))).fill += transfer_size;
+        ((WaterContainer)(G.elements.get(c2))).fill -= transfer_size;
         break;
     }
   }
