@@ -27,10 +27,12 @@ class WaterPipe extends WaterElement
     switch(adir)
     {
       case 1:
+        if(dir == -1) break;
         ((WaterContainer)(G.elements.get(c1))).fill -= transfer_size;
         ((WaterContainer)(G.elements.get(c2))).fill += transfer_size;
         break;
       case -1:
+        if(dir == 1) break;
         ((WaterContainer)(G.elements.get(c1))).fill += transfer_size;
         ((WaterContainer)(G.elements.get(c2))).fill -= transfer_size;
         break;
