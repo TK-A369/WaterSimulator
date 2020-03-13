@@ -15,6 +15,11 @@ class WaterContainer extends WaterElement
   
   public void Tick()
   {
-    
+    Draw();
+  }
+  public void Draw()
+  {
+    color(128);
+    rect(x - 25, y - 25, x + 25, y + 25);
   }
 }
