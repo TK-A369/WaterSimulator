@@ -19,7 +19,9 @@ class WaterContainer extends WaterElement
   }
   public void Draw()
   {
-    color(128);
-    rect(x - 25, y - 25, x + 25, y + 25);
+    fill(0, ((float)((float)fill / (float)capacity)) * 128, ((float)((float)fill / (float)capacity)) * 255);
+    stroke(255);
+    strokeWeight(10);
+    rect(x - 25, y - 25, 50, 50);
   }
 }
