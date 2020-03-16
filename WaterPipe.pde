@@ -17,12 +17,12 @@ class WaterPipe extends WaterElement
   {
     println("Tick!");
     Draw();
-    float f1 = ((WaterContainer)(G.elements.get(c1))).fill;
-    float f2 = ((WaterContainer)(G.elements.get(c2))).fill;
+    float f1 = ((WaterContainer)(G.elements.get(c1))).GetFill();
+    float f2 = ((WaterContainer)(G.elements.get(c2))).GetFill();
     int adir = 0;
     if(f1 > f2) adir = 1;
     if(f1 < f2) adir = -1;
-    float transfer_size = abs(f1 - f2) / 100;
+    float transfer_size = abs(f1 - f2) / 25;
     transfer_size = min(transfer_size, maxtransfer);
     switch(adir)
     {
