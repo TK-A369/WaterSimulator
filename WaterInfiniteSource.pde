@@ -35,4 +35,10 @@ class WaterInfiniteSource extends WaterContainer
     strokeWeight(10);
     rect(this.x - 25, this.y - 25, 50, 50);
   }
+  
+  @Override
+  public float GetFill()
+  {
+    return this.fill;
+  }
 }

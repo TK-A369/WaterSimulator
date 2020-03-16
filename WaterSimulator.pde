@@ -22,7 +22,7 @@ void draw()
     G.elements.get(i).Tick();
     try
     {
-      println(i + " : " + ((WaterContainer)G.elements.get(i)).fill);
+      println(i + " : " + ((WaterContainer)G.elements.get(i)).GetFill());
     }
     catch(ClassCastException e)
     {

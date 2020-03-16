@@ -33,4 +33,9 @@ class WaterContainer extends WaterElement
     noStroke();
     rect(x - 20, (y - 20) + (40 - ((fill / capacity) * 40)), 10, (fill / capacity) * 40);
   }
+  
+  public float GetFill()
+  {
+    return this.fill;
+  }
 }
