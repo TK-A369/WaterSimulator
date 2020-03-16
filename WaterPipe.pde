@@ -22,7 +22,7 @@ class WaterPipe extends WaterElement
     int adir = 0;
     if(f1 > f2) adir = 1;
     if(f1 < f2) adir = -1;
-    float transfer_size = abs(f1 - f2) / 5;
+    float transfer_size = abs(f1 - f2) / 100;
     transfer_size = min(transfer_size, maxtransfer);
     switch(adir)
     {
