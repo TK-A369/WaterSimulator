@@ -2,8 +2,8 @@ class WaterContainer extends WaterElement
 {
   public int x;
   public int y;
-  public int capacity;
-  public int fill;
+  public float capacity;
+  public float fill;
   
   public WaterContainer(int x,int y,int capacity,int fill)
   {
@@ -31,6 +31,6 @@ class WaterContainer extends WaterElement
     
     fill(0,0,255);
     noStroke();
-    rect(x - 20, (y - 20) + (float)((float)fill / (float)capacity) * 40, 10, (float)((float)fill / (float)capacity) * 40);
+    rect(x - 20, (y - 20) + (40 - (float)((float)fill / (float)capacity) * 40), 10, (float)((float)fill / (float)capacity) * 40);
   }
 }

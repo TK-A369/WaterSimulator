@@ -2,7 +2,7 @@ class WaterPipe extends WaterElement
 {
   public int c1;
   public int c2;
-  public int maxtransfer;
+  public float maxtransfer;
   public int dir;
   
   public WaterPipe(int c1, int c2, int maxtransfer, int dir)
