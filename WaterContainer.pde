@@ -5,7 +5,7 @@ class WaterContainer extends WaterElement
   public float capacity;
   public float fill;
   
-  public WaterContainer(int x,int y,int capacity,int fill)
+  public WaterContainer(int x,int y, float capacity, float fill)
   {
     this.x = x;
     this.y = y;
