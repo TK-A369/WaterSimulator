@@ -8,6 +8,9 @@ void setup()
   G.elements.add((WaterElement)new WaterContainer(100,100,1000,1000));
   G.elements.add((WaterElement)new WaterContainer(400,400,1000,0));
   G.elements.add((WaterElement)new WaterPipe(0,1,10,0));
+  G.elements.add((WaterElement)new WaterInfiniteSource(100,400));
+  G.elements.add((WaterElement)new WaterContainer(225,225,1000,0));
+  G.elements.add((WaterElement)new WaterPipe(3,4,10,0));
   frameRate(10);
 }
 
