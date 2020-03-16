@@ -7,7 +7,7 @@ void setup()
 {
   G.elements.add((WaterElement)new WaterContainer(100,100,1000,1000));
   G.elements.add((WaterElement)new WaterContainer(400,400,1000,0));
-  G.elements.add((WaterElement)new WaterPipe(0,1,25,0));
+  G.elements.add((WaterElement)new WaterPipe(0,1,1,0));
 }
 
 void draw()
