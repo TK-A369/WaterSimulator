@@ -31,6 +31,6 @@ class WaterContainer extends WaterElement
     
     fill(0,0,255);
     noStroke();
-    rect(x - 20, (y - 20) + (40 - (float)((float)fill / (float)capacity) * 40), 10, (float)((float)fill / (float)capacity) * 40);
+    rect(x - 20, (y - 20) + (40 - ((fill / capacity) * 40)), 10, (fill / capacity) * 40);
   }
 }
